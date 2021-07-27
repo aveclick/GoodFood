@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet');
+body
+{
+    font-family: Alegreya Sans SC, serif;
+    height: 100%;
+    background: black;
+}
+
+html{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header{
+    font-size: 30px;
+}
+
+.header{
+    border-bottom: 1px solid white;
+}
+
+.logo
+{
+    background-color: black;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 115px;
+    margin-left: 80px;
+    color: #A8A8A8 !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white !important;
+}
+
+h1{
+    font-family: 'Caveat', cursive;
+    font-size: 57px;
+    color: indianred;
+    text-align: center;
+}
+
+h2, h4{
+    font-family: 'Caveat', cursive;
+    font-size: 47px;
+    color: black;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h3 {
+    color: indianred;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.left{width:50%;overflow:hidden;float:left;height: 100%;}
+.right{width:50%;overflow:hidden;height: 100%;}
+
+
+.left1{width:60%;overflow:hidden;float:left;height: 100%;}
+.right1{width:40%;overflow:hidden;height: 100%;}
+
+.content{
+    background: #E7ECFF;
+    width: 100%; /* Ширина области */
+    height: 520px;
+    margin: 0;
+}
+
+.content .left .photo img {
+    max-width: 100%;
+    min-height: 260px;
+    object-fit: cover;
+}
+
+.content .right a{
+    text-decoration: none;
+}
+
+.content .right a:hover{
+    text-decoration: underline blue;
+}
+
+.photo {
+    float: left; /* говорим элементам выстраиваться один за другим */
+    width: 50%; /* устанавливаем ширину элемента */
+    margin: 0;
+    padding: 0;
+}
+
+small{
+    color: palevioletred;
+}
+
+.col2 li{display:block;float:left;width:50%;}
+.col2{margin:0;padding:0;list-style-type:none;text-align: center}
+.col2 p{
+    font-family: 'Caveat', cursive;
+    font-size: 35px;
+}
+
+.container_1{
+    background: #DEF7FE;
+    height: 500px;
+    width: 100%;
+    margin: 0;
+}
+
+.container_1 .photo img{
+    max-width: 100%;
+    min-height: 500px;
+    object-fit: cover;
+}
+
+.container_1 .right a{
+    text-decoration: none;
+}
+
+.container_1 .right a:hover{
+    text-decoration: underline blue;
+}
+
+.container_2{
+    background: #FED6BC;
+    min-height: 400px;
+    width: 100%;
+    margin: 0;
+}
+
+.container_2 p{
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-right: 25px;
+}
+
+.container_2 h4{
+    margin-bottom: 30px;
+}
+
+.center_img{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.center_img3{
+    text-align: center;
+    margin: 0 auto
+}
+
+.center_img2{
+    display: flex; align-items: center; justify-content: center; margin: 35px auto 0 auto;
+}
+
+.container_footer a:hover{
+    color: white !important;
+}
+
+.container_footer{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #A8A8A8;
+    margin-top: 30px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container_footer h5{
+    color: white;
+}
+
+.container_footer a, a:hover{
+    text-decoration: none;
+    color: #A8A8A8;
+}
+
+#toTop {
+    position: fixed;
+    display: inline-block;
+    bottom: 30px;
+    right: -40px;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    background: palevioletred;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+    justify-content: center;
+}
+
+#toTop:hover {
+    background: palevioletred;
+}
+
+#toTop svg {
+    position: relative;
+    top: 12px;
+    right: -1px;
+    fill: #fff;
+    transition: all .3s ease-in-out;
+}
+
+#toTop:hover svg {
+    cursor: pointer;
+    fill: #fff;
+    transition: all .3s ease-in-out;
+}
+
+#toTop.show {
+    opacity: 1;
+    visibility: visible;
+    right: calc(2%);
+}
+
+.container_login{
+    width: 100%;
+    max-width:450px;
+    height:300px;
+    text-align: center;
+    margin: 40px auto 40px auto;
+    border: 2px solid indianred;
+}
+
+.container_signup{
+    width: 100%;
+    max-width:450px;
+    height:430px;
+    text-align: center;
+    margin: 40px auto 40px auto;
+    border: 2px solid indianred;
+}
+
+.auth_margin{
+    margin: 0 15px;
+}
+
+.container_login h1, .container_signup h1, .container_pass h1{
+    font-family: Alegreya Sans SC, serif;
+    font-size: 30px;
+    color: white;
+    margin-top: 20px;
+}
+
+.form-control
+{
+    width: 50%;
+    margin: 0 auto;
+}
+
+input:focus {
+    outline:none;
+}
+
+
+.form-control:focus {
+    border-color: #ccc;
+    -webkit-box-shadow: none;
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+}
+
+.my_btn {
+    background: indianred;
+    margin-top:15px;
+    padding:5px 20px;
+    border: none;
+    color: #fff;
+}
+
+.my_btn:hover {
+    background: indianred;
+    box-shadow: 0 0 10px 4px palevioletred;
+}
+
+.container_login a, .container_signup a{
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+}
+
+.container_login a:hover, .container_signup a:hover{
+    text-decoration: underline indianred;
+    color: white;
+    margin-right: 30px;
+}
+
+.container_profile label{
+
+    margin-left: 20px;
+}
+
+.container_profile{
+    width: 100%;
+    max-width:1000px;
+    min-height:250px;
+    text-align: center;
+    margin: 40px auto 40px auto;
+    border: none;
+}
+
+.container_profile label{
+    font-size: 20px;
+    color: indianred;
+}
+
+.flex .form-control
+{
+    width: 50%;
+    margin: 0 20px 0 20px;
+}
+
+.flex{
+    display: flex;
+}
+
+.container_profile .my_btn{
+
+    margin: 0 20px 0 0;
+}
+
+.container_pass{
+    width: 100%;
+    max-width:450px;
+    min-height:250px;
+    text-align: center;
+    margin: 40px auto 40px auto;
+    border: 2px solid indianred;
+}
+.gallery{
+    width: 100%;
+    max-width: 1000px;
+    margin:0 auto;
+}
+
+.gallery img{
+    transition: 1s;
+    max-width: 250px;
+    padding: 20px;
+}
+
+.gallery img:hover{
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
